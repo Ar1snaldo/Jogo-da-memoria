@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-.b1, .b2, .b3{
+.b1, .b2, .b3, .back{
     background-color: #ff4454;
     border-radius: 8px;
     color: #000000;
@@ -32,39 +32,21 @@
     background-color:#ffffff;
     color: #000000;
 }
+.back:hover{
+    background-color:#ffffff;
+    color: #000000;
+}
+@media screen and (max-width: 768px){
+    .all{
+        flex-direction: column;
+    }
 
-@media screen and (max-width: 480px) {
-            .all{
-                flex-direction: column;
-            }
-            .b1{
-                margin-bottom: 20px;
-                max-width: 150px;
-                padding: 20px;
-            }
-            
-            .b2{
-                margin-bottom: 20px;
-                max-width: 150px;
-                padding: 20px;
-            }
-            
-            .b3{
-                max-width: 150px;
-                padding: 20px;
-            }
-        }
-
-@media screen and (max-width: 768px) {
-            .b1{
-                max-width: 250px;
-            }
-            
-            .b2{
-                max-width: 250px;
-            }
-        
-            .b3{
-                max-width: 350px;
-            }
+    .b1, .b2, .b3, .back{
+        margin: 1.5em 1.5em;
+    }
+    .back{
+        width: 200px;
+    }
 }        
+
+
